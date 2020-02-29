@@ -1,0 +1,33 @@
+<html>
+
+<head>
+
+</head>
+
+
+<body>
+	
+<script type="text/javascript">console.log("begin");</script>
+<script src="/socket.io/socket.io.js"></script>
+
+<p>hallo</p>
+<p><a href="/href.html">href</a></p>
+
+<script type="text/javascript">
+
+var socket = io.connect();
+
+socket.on('success', function ()
+{
+	console.log("Success! socket.on");
+});
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
