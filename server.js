@@ -13,10 +13,6 @@ console.log('Listening');
 var io = require('socket.io').listen(app);
 console.log('io is added');
 
-io.sockets.on('connection', function (socket){
-	console.log('user connected');
-	//socket.emit('success');
 
-});
 
 
