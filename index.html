@@ -2,11 +2,22 @@
 <head>
 	<script type="text/javascript">console.log("begin");</script>
 	<script src="/socket.io/socket.io.js"></script>
+	
+<script type="text/javascript">
+var socket = io.connect();
+socket.on('success', function ()
+{
+	console.log("Success! socket.on");
+});
+
+
+</script>
+	
 </head>
 <body>
 	
 	
-<p>4</p>
+<p>5</p>
 <p><a href="/href.html">href</a></p>
 	
 	
