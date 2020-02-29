@@ -1,5 +1,5 @@
-const PORT = process.env.PORT || 3000;
-
+//const PORT = process.env.PORT || 3000;
+const PORT = 5000;
 var static = require('node-static');
 var http = require('http');
 var file = new(static.Server)();
