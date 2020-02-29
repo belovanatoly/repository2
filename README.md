@@ -1,2 +1,4 @@
 # repository2
-working server2. node-static + socket
+working node-static + socket
+NODE/server2 
+located HEROKU repository2 
