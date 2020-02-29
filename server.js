@@ -8,7 +8,7 @@ var app = http.createServer(function (req, res) {
 }).listen(PORT);
 
 console.log('begin');
-console.log('Listening');
+console.log('Listening on ${PORT}`');
 
 var io = require('socket.io').listen(app);
 console.log('io is added');
