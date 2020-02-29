@@ -1,14 +1,14 @@
-const port = process.env.port || 3000;
+const PORT = process.env.PORT || 5000;
 
 var static = require('node-static');
 var http = require('http');
 var file = new(static.Server)();
 var app = http.createServer(function (req, res) {
 	file.serve(req, res);
-}).listen(port);
+}).listen(PORT);
 
 console.log('begin');
-console.log('Listening on ' + port);
+console.log('Listening on ' + PORT);
 
 var io = require('socket.io').listen(app);
 console.log('io is added');
