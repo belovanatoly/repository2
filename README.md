@@ -1,2 +1,2 @@
 # repository2
-testing
+working server2. node-static + socket
