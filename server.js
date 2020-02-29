@@ -10,4 +10,12 @@ var app = http.createServer(function (req, res) {
 console.log('begin');
 console.log('Listening');
 
+var io = require('socket.io').listen(app);
+
+io.sockets.on('connection', function (socket){
+	console.log('user connected');
+	socket.emit('success');
+
+});
+
 
